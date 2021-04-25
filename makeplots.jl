@@ -26,9 +26,9 @@ end
 function doubleconcplot(r,c1,c2,custlabel)
     n_spatial1,ntime1 = getn(c1)
     n_spatial2,ntime2 = getn(c2)
-    c10min= c1[:,ntime÷6]
-    c30min=c1[:,ntime÷2]
-    c60min=c1[:,ntime]
+    c10min= c1[:,ntime1÷6]
+    c30min=c1[:,ntime1÷2]
+    c60min=c1[:,ntime1]
     c10min2= c2[:,ntime2÷6]
     c30min2=c2[:,ntime2÷2]
     c60min2=c2[:,ntime2]
@@ -46,9 +46,9 @@ end
 function errorconcplot(r,c1,c2)
     n_spatial1,ntime1 = getn(c1)
     n_spatial2,ntime2 = getn(c2)
-    c10min= c1[:,ntime÷6]
-    c30min=c1[:,ntime÷2]
-    c60min=c1[:,ntime]
+    c10min= c1[:,ntime1÷6]
+    c30min=c1[:,ntime1÷2]
+    c60min=c1[:,ntime1]
     c10min2= c2[:,ntime2÷6]
     c30min2=c2[:,ntime2÷2]
     c60min2=c2[:,ntime2]
