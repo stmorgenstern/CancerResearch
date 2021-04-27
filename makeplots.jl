@@ -69,7 +69,6 @@ end
 function singleaccumplot(c)
     n_spatial,n_time = getn(c)
     t,accum =Accumulation_Model(c,n_spatial,n_time)
-    println("yeet",n_spatial," ",n_time)
     accumplot= plot(t,accum,
     xlabel="Time(min)",
     ylabel="Dimensionless Concentration Accumulation",
